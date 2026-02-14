@@ -1,0 +1,41 @@
+/* Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #f48650, #e36855);
+    color: #363232;
+}
+
+/* Main Heading */
+h1 {
+    margin-top: 30px;
+}
+
+/* Container Spacing */
+.container {
+    margin-top: 40px;
+}
+
+/* Button Styling */
+button {
+    margin: 10px;
+    padding: 12px 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(216, 213, 213);
+    transition: 0.3s;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #f4ca3e;
+}
+
+/* Story Output Styling */
+#output {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}

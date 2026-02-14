@@ -54,3 +54,19 @@ btn5.onclick = function () {
     btn5.textContent = selected[4];
     index5 = (index5 + 1) % feelings.length;
 };
+//step 6 created a function that generates the story by concatenating the selected words and displays it in the output div
+document.getElementById("createStory").onclick = function () {
+    // Check if all selections are made
+    if (selected.includes("")) {
+        output.textContent = "Kindly select all the parts of the story!";
+        return;
+    }
+     // then  combine selections into one sentence
+    const story = `${selected[0]} ${selected[1]} something ${selected[2]} ${selected[3]} ${selected[4]}`;
+
+    // Display story
+    output.textContent = story;
+
+    // Speak the story aloud
+    speakStory(story);
+};

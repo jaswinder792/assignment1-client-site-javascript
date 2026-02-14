@@ -16,3 +16,12 @@ let index4 = 0;
 let index5 = 0;
 //  step 3 added array taht  stores the chosen words
 let selected = ["", "", "", "", ""];
+/* step 4 added buttons references  */
+
+const btn1 = document.getElementById("btn1");
+const btn2 = document.getElementById("btn2");
+const btn3 = document.getElementById("btn3");
+const btn4 = document.getElementById("btn4");
+const btn5 = document.getElementById("btn5");
+
+const output = document.getElementById("output");

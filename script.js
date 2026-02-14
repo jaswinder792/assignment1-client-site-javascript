@@ -86,3 +86,28 @@ document.getElementById("randomStory").onclick = function () {
 
     speakStory(randomStory);
 };
+/*step 8  Created reset function*/
+
+document.getElementById("reset").onclick = function () {
+
+    // Clear selected values
+    selected = ["", "", "", "", ""];
+
+    // reset labels of buttons
+    btn1.textContent = "Character";
+    btn2.textContent = "Action";
+    btn3.textContent = "Place";
+    btn4.textContent = "Time";
+    btn5.textContent = "Feeling";
+
+    // Clear story output
+    output.textContent = "";
+};
+/* at last speech synthesis function  */
+
+// Uses browser speech API to read story aloud
+function speakStory(text) {
+    const speech = new SpeechSynthesisUtterance(text);
+    speech.lang = "en-US";
+    window.speechSynthesis.speak(speech);
+}

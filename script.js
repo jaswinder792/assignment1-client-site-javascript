@@ -70,3 +70,19 @@ document.getElementById("createStory").onclick = function () {
     // Speak the story aloud
     speakStory(story);
 };
+/*step 7  random story generation code */
+
+document.getElementById("randomStory").onclick = function () {
+
+    // Select random word from each array
+    const randomStory =
+        characters[Math.floor(Math.random() * characters.length)] + " " +
+        actions[Math.floor(Math.random() * actions.length)] + " something " +
+        places[Math.floor(Math.random() * places.length)] + " " +
+        times[Math.floor(Math.random() * times.length)] + " " +
+        feelings[Math.floor(Math.random() * feelings.length)];
+
+    output.textContent = randomStory;
+
+    speakStory(randomStory);
+};

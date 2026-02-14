@@ -14,3 +14,5 @@ let index2 = 0;
 let index3 = 0;
 let index4 = 0;
 let index5 = 0;
+//  step 3 added array taht  stores the chosen words
+let selected = ["", "", "", "", ""];
